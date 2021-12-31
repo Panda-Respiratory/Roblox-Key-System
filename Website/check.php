@@ -3,16 +3,8 @@
 $database = include('database.php');
 $blacklist = include('usedkey.php');
 
-   if(strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE) {echo('');}
-elseif(strpos($_SERVER['HTTP_USER_AGENT'], 'Trident') !== FALSE){echo('');}
-elseif(strpos($_SERVER['HTTP_USER_AGENT'], 'Firefox') !== FALSE){echo('');}
-elseif(strpos($_SERVER['HTTP_USER_AGENT'], 'Opera Mini') !== FALSE){echo('');}
-elseif(strpos($_SERVER['HTTP_USER_AGENT'], 'Opera') !== FALSE){echo('');}
-elseif(strpos($_SERVER['HTTP_USER_AGENT'], 'Safari') !== FALSE){echo('');}
-elseif(strpos($_SERVER['HTTP_USER_AGENT'], 'Mozilla') !== FALSE){echo('');} 
-$protocol = $_SERVER['SERVER_PROTOCOL'];
-$port = $_SERVER['REMOTE_PORT'];
 $agent = $_SERVER['HTTP_USER_AGENT'];
+if(strpos($agent, 'MSIE') !== FALSE || strpos($agent, 'Trident') !== FALSE || strpos($agent, 'Firefox') !== FALSE || strpos($agent, 'Opera Mini') !== FALSE || strpos($agent, 'Opera') !== FALSE || strpos($agent, 'Safari') !== FALSE || strpos($agent, 'Mozilla') !== FALSE) {die('nope');}
 $sub = $_GET["key"];
 
 if (in_array($sub, $blacklist,TRUE))
