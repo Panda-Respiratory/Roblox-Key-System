@@ -14,16 +14,32 @@ $protocol = $_SERVER['SERVER_PROTOCOL'];
 $port = $_SERVER['REMOTE_PORT'];
 $agent = $_SERVER['HTTP_USER_AGENT'];
 $sub = $_GET["key"];
+$hwid = $_GET['hwid'];
 
+$endResult = hash('ripemd160', $sub . $hwid);
+
+$devkeys = array(
+    "kerlemmorsti@gmail.com", //5d8ec2b7415347aca25a3e04ff363272819ce46c
+    "5d8ec2b7415347aca25a3e04ff363272819ce46c"
+    ); 
+
+
+    
 if (in_array($sub, $blacklist,TRUE))
 {
     echo "Used";
     return; 
 }
-if (in_array($sub, $database,TRUE)) {
+else if (in_array($sub, $database,TRUE)) {
     echo "Whitelisted"; 
     keytodb($sub);
-} else {
+    return;
+} 
+else if (in_array($endResult, $devkeys,TRUE)) {
+    echo "DevMode";
+    return; 
+} 
+else {
     echo "Not Whitelisted"; 
 }
 

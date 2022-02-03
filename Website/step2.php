@@ -1,8 +1,14 @@
 <?
-    ini_set('display_errors', 'Off');
+ini_set('display_errors', 'Off');
  error_reporting(0);
-    session_start();
-    $_SESSION['time'] = time(); 
+session_start();
+if(time() - $_SESSION['time'] < 02 || !isset($_SESSION['time']))
+{
+	echo "you did not subscribe isn't? Please Support me Thank you";
+	echo "<meta http-equiv='Refresh' Content='4;url=https://pandatechnology.xyz/KeySystem/Panda/'>"; 
+	return;
+} 
+$_SESSION['timetwo'] = time(); 
 ?>
 
 <!DOCTYPE html>
@@ -12,9 +18,7 @@
   <!-- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8">
-  <title>Checkpoint 1-3 | Panda Technology(C)</title>
-  <script data-cfasync="false" src="//d2fbvay81k4ji3.cloudfront.net/?avbfd=931598"></script>
-  <script data-cfasync="false" src="//d2fbvay81k4ji3.cloudfront.net/?avbfd=931598"></script>
+  <title>Checkpoint 2 of 3 | Panda Technology(C)</title>
   <script data-cfasync="false" src="//d2fbvay81k4ji3.cloudfront.net/?avbfd=931598"></script>
 
   <!-- Mobile Specific Metas
@@ -29,8 +33,6 @@
   <link rel="shortcut icon" type="https://pandatechnology.xyz/image/x-icon" href="https://pandatechnology.xyz/images/favicon.png" />
   
   <!-- PLUGINS CSS STYLE --> 
-  <script src='https://www.google.com/recaptcha/api.js' async defer ></script>
-
   <link rel="stylesheet" href="https://pandatechnology.xyz/plugins/000WebHostGay.css">
   <link rel="stylesheet" href="https://pandatechnology.xyz/plugins/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="https://pandatechnology.xyz/plugins/themify-icons/themify-icons.css">
@@ -113,7 +115,7 @@
 		<div class="row">
 			<div class="col-sm-8 m-auto">
 				<!-- Page Title -->
-				<h1>Panda Checkpoint 1</h1>
+				<h1>Panda Checkpoint 2</h1>
 				<!-- Page Description -->
 				<p></p>
 			</div>
@@ -127,23 +129,25 @@
     .text-center {
         text-align: center;
     }
+
+    .g-recaptcha {
+        display: inline-block;
+    }
 </style>
 
 <section class="JoinPanda">
   <div>
     <div class="col-12 text-center">
       <p>Please Check If you're Human or Not?</p>
-      <p>Checkpoint [ 1 of 3 ]</p>
-      <form id="frmContact" action="https://pandatechnology.xyz/KeySystem/Panda/redirect.php" method="POST" novalidate="novalidate">
-   <div style="display: inline-block;" class="g-recaptcha" data-sitekey="6LdSgDAdAAAAALiS5DS8gdU-0WIovu5rNKmTLSHy"></div>
+      <p>Checkpoint [ 2 of 3 ]</p>
+      <form id="frmContact" action="https://link-target.net/23330/panda-development-x" method="POST" novalidate="novalidate">
+   <div class="g-recaptcha" data-sitekey="6LdSgDAdAAAAALiS5DS8gdU-0WIovu5rNKmTLSHy"></div>
    <div style="text-align: center;">
    <input type="Submit" name="Submit">
       </div>
   </div>
   </form>
 </section>
-
-
 
 <br>
 <br>

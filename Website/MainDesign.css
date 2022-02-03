@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+}
+html,
+body {
+    height: 100%;
+    background: #f5f5f5;
+}
+.keysyscontainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box {
+    width: 460px;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #dcdcdc;
+    padding: 24px;
+    margin: 8px 0;
+}
+.button {
+    margin-left: 10px;
+}
+.title {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    color: #323232;
+}
+.text {
+    font-size: 14px;
+    color: #646464;
+    display: block;
+    margin-bottom: 22px;
+}
+.key {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.Copy {background-color: #3276B1;} /* Green */
