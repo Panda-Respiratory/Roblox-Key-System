@@ -1,5 +1,5 @@
 # Roblox-Key-System
-based on .php file ( no database needed ) also this is only 1-time key system, if the key is used, it wouldn't longer valid until you get new key
+based on .php file ( no database needed ) also this is only 1-time key system ( HWID Added if you have private keys ), if the key is used, it wouldn't longer valid until you get new key. Unless you can utilize this Key System to 24 Hours Key System on ( .NET / C# ). Yes could possible on C++ but i don't have that code lol
 
 
 For C#
