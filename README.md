@@ -13,15 +13,28 @@ based on .php file ( no database needed ) also this is only 1-time key system ( 
 - I'm not a Robot Captcha 
 - 
 
-[ A C# Source Sample UI is Their ]
+C# Source Code:
+
+```sh
+https://github.com/Panda-Respiratory/Roblox-Key-System/tree/main/C%23%20Source%20Code
+```
 
 What you need:
 
-1.] Your Braincells ( need it badly )
+> 1.] Your Braincells ( need it badly )
+> 2.] A Custom Domain ofc so google recaptcha will work
+> 3.] Google Recaptcha ( v2 )
 
-2.] A Custom Domain ofc so google recaptcha will work
+Possible Notice
+> Replace the Recaptcha's Site Key and Secret Key with your own Site Key and Secret Key or it won't worked.
+> Replace Some Link like ( duhh you know it already ) 
+> Add your own Design on it lol aka Web Design.
 
-3.] Google Recaptcha ( v2 )
+
+
+
+
+
 
 
 Edit the index.php then replace the site key & secret key with yours
