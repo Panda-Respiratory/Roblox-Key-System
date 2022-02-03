@@ -41,7 +41,7 @@ Possible Notice
 
 
 
-Edit the index.php then replace the site key & secret key with yours
+Edit the index.php, step2.php, step3.php, and generated.php then replace the site key & secret key with yours.
 
 https://www.google.com/recaptcha/admin/create
 
