@@ -22,12 +22,16 @@ https://github.com/Panda-Respiratory/Roblox-Key-System/tree/main/C%23%20Source%2
 What you need:
 
 > 1.] Your Braincells ( need it badly )
+> 
 > 2.] A Custom Domain ofc so google recaptcha will work
+> 
 > 3.] Google Recaptcha ( v2 )
 
 Possible Notice
 > Replace the Recaptcha's Site Key and Secret Key with your own Site Key and Secret Key or it won't worked.
+> 
 > Replace Some Link like ( duhh you know it already ) 
+> 
 > Add your own Design on it lol aka Web Design.
 
 
